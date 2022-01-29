@@ -6,7 +6,7 @@ services:
     network_mode: host
     environment:
       - "TZ=Europe/Paris"
-      - "DISCORD_TOKEN=OTM3MDM4NjcxNDQwNDEyNzI0.YfV7RA.uYc245fJmHQeRfhSGtf0dcbdDrU"
+      - "DISCORD_TOKEN=XXX" # Discord bot token
       - NB_VOICE_CHANNELS=5
       - "COMMAND_PREFIX=!"
       - "ROLE_INTERVENANT_PREFIX=→ "
