@@ -1,0 +1,14 @@
+services:
+  discord:
+    build: .
+    image: iut-tlse3/discord_bot:latest
+    container_name: psebot
+    network_mode: host
+    environment:
+      - "TZ=Europe/Paris"
+      - "DISCORD_TOKEN=OTM3MDM4NjcxNDQwNDEyNzI0.YfV7RA.uYc245fJmHQeRfhSGtf0dcbdDrU"
+      - NB_VOICE_CHANNELS=5
+      - "COMMAND_PREFIX=!"
+      - "ROLE_INTERVENANT_PREFIX=→ "
+      - "ROLE_INTERVENANT_NAME=Intervenant"
+    restart: unless-stopped
